@@ -24,7 +24,7 @@ export default class PostConcept {
   }
 
   async delete(_id: ObjectId) {
-    await this.posts.deleteOne({ _id });
+    await this.posts.deleteOne(_id);
     return { msg: "Post deleted successfully!" };
   }
 }
